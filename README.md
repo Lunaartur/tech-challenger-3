@@ -45,4 +45,9 @@ Os três scripts passaram na análise de sintaxe Python ao preparar este pacote.
 
 ## Consultas SQL simplificadas
 
-Para as conferências básicas no Athena, utilize as [12 consultas simples](04_validacoes_athena/consultas_simples_athena.sql). O passo a passo está em [Como executar](04_validacoes_athena/COMO_EXECUTAR_SQL_SIMPLES.md). Execute um bloco por vez. Essa versão não inclui respostas esperadas nos comentários.
+Para as conferências básicas no Athena, utilize as [30 consultas simples](04_validacoes_athena/consultas_simples_athena.sql). O passo a passo está em [Como executar](04_validacoes_athena/COMO_EXECUTAR_SQL_SIMPLES.md). Execute um bloco por vez. Essa versão não inclui respostas esperadas nos comentários.
+
+
+## Apresentação
+
+A versão V4 original está na pasta [ppt](ppt/). O guia das consultas simples relaciona cada slide aos SELECTs de conferência. Os pontos de interpretação da apresentação seguem em validação pela equipe.

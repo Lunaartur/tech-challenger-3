@@ -1,6 +1,6 @@
 # Como executar as consultas simples no Athena
 
-O arquivo [consultas_simples_athena.sql](consultas_simples_athena.sql) contém 12 consultas independentes. Cada bloco tem apenas um título indicando seu propósito, sem respostas ou valores esperados.
+O arquivo [consultas_simples_athena.sql](consultas_simples_athena.sql) contém 30 consultas independentes. Cada bloco tem apenas um título indicando seu propósito, sem respostas ou valores esperados.
 
 ## Preparação
 
@@ -19,7 +19,7 @@ O arquivo [consultas_simples_athena.sql](consultas_simples_athena.sql) contém 1
 4. Repita o procedimento com as demais consultas, uma por vez.
 5. Registre a consulta, a data e o resultado utilizado na validação. Use **Baixar CSV dos resultados** quando precisar compartilhar a saída.
 
-Não cole as 12 consultas de uma vez como uma única execução. Cada consulta é independente; não é preciso criar tabelas temporárias.
+Não cole as 30 consultas de uma vez como uma única execução. Cada consulta é independente; não é preciso criar tabelas temporárias.
 
 ## O que as consultas verificam
 
@@ -49,3 +49,26 @@ Não cole as 12 consultas de uma vez como uma única execução. Cada consulta �
 - Problema com a saída da consulta: confira a configuração do local de resultados do workgroup.
 
 As consultas não alteram as tabelas. O Athena lê os dados e grava as saídas no local de resultados configurado, sujeito ao consumo do serviço. Não inclua credenciais nos scripts ou nos arquivos compartilhados.
+
+## Relação com a apresentação V4
+
+As consultas 01 a 12 foram preservadas. As consultas 13 a 30 complementam os recortes numéricos dos slides. Os comentários contêm apenas títulos e propósitos, sem respostas esperadas.
+
+| Slide | Consultas |
+|---|---|
+| 2: totais de respostas | 02; somar as linhas por edição para obter o total |
+| 3: resumo executivo | 08, 12, 18, 27, 28, 29, 30 |
+| 4: catálogo e arquitetura | 01 para listar tabelas; execução e desenho exigem evidências além de SELECTs |
+| 5: cargos, senioridade e região | 13, 14, 15, 16 |
+| 6: remuneração por cargo, nível, setor e região | 07, 17, 18, 19, 20 |
+| 7: gênero por edição e faixas salariais entre seniores | 06, 21, 22 |
+| 8: trabalho, satisfação e critérios de emprego | 08, 09, 23 |
+| 9: linguagens, cloud e BI | 10, 24, 25, 26 |
+| 10: adoção, ferramentas, resultados e barreiras de IA | 12, 27, 28, 29, 30 |
+| 11: recomendações | Usar os indicadores anteriores como evidência; as recomendações não são resultados diretos de uma consulta |
+
+Nas consultas salariais, CASE seleciona as faixas a partir de R$ 12.001. SUM(numerador) agrega as contagens e NULLIF evita divisão por zero. Não há WITH, JOIN ou UNION. A consulta 17 exclui categorias genéricas e usa uma base mínima por cargo.
+
+As consultas permitem conferir os valores; não validam automaticamente a interpretação dos textos da apresentação. A V4 é disponibilizada em sua versão original, com os pontos de redação em revisão pela equipe.
+
+Os blocos Gold foram conferidos localmente contra os CSVs do projeto. Essa conferência não substitui a execução no Athena nem comprova o estado atual dos dados na AWS.
