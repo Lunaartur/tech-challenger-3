@@ -41,3 +41,8 @@ Os scripts são cópias integrais da última versão local preparada com o ajust
 As contagens esperadas no guia SQL correspondem à exportação auditada em 18/10/2026. Novos dados podem mudar legitimamente os totais. Percentuais usam escala 0 a 100; não somar todos aos setores, nem denominadores repetidos por categoria/faixa.
 
 Os três scripts passaram na análise de sintaxe Python ao preparar este pacote. Nenhum Job ou consulta foi executado na AWS nesta entrega. O pacote não é um provisionador de infraestrutura: não cria automaticamente bucket, IAM, Jobs ou Crawlers.
+
+
+## Consultas SQL simplificadas
+
+Para as conferências básicas no Athena, utilize as [12 consultas simples](04_validacoes_athena/consultas_simples_athena.sql). O passo a passo está em [Como executar](04_validacoes_athena/COMO_EXECUTAR_SQL_SIMPLES.md). Execute um bloco por vez. Essa versão não inclui respostas esperadas nos comentários.
