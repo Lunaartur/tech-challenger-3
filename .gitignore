@@ -1,0 +1,14 @@
+# Dados e credenciais locais
+.aws/
+.env
+.env.*
+!.env.example
+*credentials*
+*token*
+*.csv
+*.parquet
+*.zip
+*.rar
+work/
+__pycache__/
+*.pyc

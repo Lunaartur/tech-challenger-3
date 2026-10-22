@@ -1,0 +1,14 @@
+[
+  {
+    "arquivo": "02_silver/01_bronze_para_silver.py",
+    "sha256": "e0816f3acd31b1696556c4562fbae91986fa854ecb563e3bdffd3bd7d27e7fe3"
+  },
+  {
+    "arquivo": "02_silver/02_silver_tecnologias_ia.py",
+    "sha256": "8a9e173fae8d0e51efcc04406301a65a21e114292a02d4eb07b13378569295bf"
+  },
+  {
+    "arquivo": "03_gold/03_silver_para_gold.py",
+    "sha256": "596b955b25ee73717ca8fb3194a0f29cc17129e682042bef0f3072456f30f5e4"
+  }
+]
